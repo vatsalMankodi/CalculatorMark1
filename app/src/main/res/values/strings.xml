@@ -2,4 +2,9 @@
     <string name="app_name">CalculatorMark1</string>
     <string name="welcomeMessage">Welcome to my First Calculator</string>
     <string name="proceedMessage">Proceed</string>
+    <string name="mainCalculatorHeading">Integer Calculator</string>
+    <string name="firstNumberLabel">First Number:</string>
+    <string name="secondNumberLabel">Second Number:</string>
+    <string name="answerNotifier">Answer:</string>
+    <string name="numberHint">Number Here</string>
 </resources>
