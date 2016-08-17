@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CalculatorMark1</string>
+    <string name="welcomeMessage">Welcome to my First Calculator</string>
+    <string name="proceedMessage">Proceed</string>
+</resources>

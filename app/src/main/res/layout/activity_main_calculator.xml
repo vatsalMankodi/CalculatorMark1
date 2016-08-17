@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#f66105"
+    tools:context="com.example.vatsalmankodi.calculatormark1.MainCalculator">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Integer Calculator"
+        android:textSize="30dp"
+        android:hint="Nember Here"
+        android:id="@+id/heading1"
+        android:textColor="#0000FF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="First Number"
+        android:id="@+id/firstLabel"
+        android:textColor="#0000FF"
+        android:layout_below="@+id/heading1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="#0000FF"
+        android:id="@+id/firstNumber"
+        android:layout_below="@+id/firstLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Second Number"
+        android:textColor="#0000FF"
+        android:id="@+id/secondLabel"
+        android:layout_below="@+id/firstNumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/secondNumber"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/secondLabel"
+        android:textColor="#0000FF"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:id="@+id/additionButton"
+        android:layout_alignTop="@+id/divisionButton"
+        android:layout_alignLeft="@+id/multiplicationButton"
+        android:layout_alignStart="@+id/multiplicationButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:text="-"
+        android:id="@+id/subtractionButton"
+        android:layout_above="@+id/answerTagLabel"
+        android:layout_alignLeft="@+id/divisionButton"
+        android:layout_alignStart="@+id/divisionButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:id="@+id/multiplicationButton"
+        android:layout_below="@+id/additionButton"
+        android:layout_alignRight="@+id/secondLabel"
+        android:layout_alignEnd="@+id/secondLabel"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:id="@+id/divisionButton"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/secondNumber"
+        android:layout_toEndOf="@+id/secondNumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Answer:"
+        android:textSize="25dp"
+        android:textColor="#0000ff"
+        android:id="@+id/answerTagLabel"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/multiplicationButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/answerHere"
+        android:textColor="#00ff00"
+        android:textSize="25sp"
+        android:layout_below="@+id/answerTagLabel"
+        android:layout_alignRight="@+id/subtractionButton"
+        android:layout_alignEnd="@+id/subtractionButton"
+        android:layout_marginTop="29dp" />
+
+</RelativeLayout>
